@@ -31,8 +31,9 @@ jobs:
       - install: npm install
       # The next step is "test". It tests your NodeJS package
       # NPM reference document - https://docs.npmjs.com/cli/test
-      - test: npm test
+      # - test: npm test
   build-dockerfile:
     requires: main
     steps:
-      - publish: echo 'Build docker file.'
+      - set_date: BUILDDATE=$(date +"%Y-%m-%d_%H:%M:%S")
+      - publish: $BUILDDATE
