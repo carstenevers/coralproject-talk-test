@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  data-testid="signIn-container"
+>
+  <Localized
+    id="signIn-signInToJoinHeader"
+    subtitle={<Subtitle />}
+    title={<Title />}
+  >
+    <Bar>
+      <Title>
+        Sign In
+      </Title>
+      <Subtitle>
+        to join the conversation
+      </Subtitle>
+    </Bar>
+  </Localized>
+  <SubBar>
+    <Localized
+      id="signIn-noAccountSignUp"
+      textlink={
+        <withPropsOnChange(TextLinkProps)
+          href="/signUp"
+          onClick={[Function]}
+        />
+      }
+    >
+      <ForwardRef(forwardRef)
+        container={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        variant="bodyCopy"
+      >
+        Don't have an account?
+         
+        <withPropsOnChange(TextLinkProps)
+          href="/signUp"
+          onClick={[Function]}
+        >
+          Sign Up
+        </withPropsOnChange(TextLinkProps)>
+      </ForwardRef(forwardRef)>
+    </Localized>
+  </SubBar>
+  <Main
+    data-testid="signIn-main"
+  >
+    <ForwardRef(forwardRef)
+      size="oneAndAHalf"
+    >
+      <SignInContainer />
+      <OrSeparator />
+      <ForwardRef(forwardRef)>
+        <Relay(SignInWithFacebookContainer)
+          auth={Object {}}
+        />
+        <Relay(SignInWithGoogleContainer)
+          auth={Object {}}
+        />
+        <Relay(SignInWithOIDCContainer)
+          auth={Object {}}
+        />
+      </ForwardRef(forwardRef)>
+    </ForwardRef(forwardRef)>
+  </Main>
+</div>
+`;
+
+exports[`renders error 1`] = `
+<div
+  data-testid="signIn-container"
+>
+  <Localized
+    id="signIn-signInToJoinHeader"
+    subtitle={<Subtitle />}
+    title={<Title />}
+  >
+    <Bar>
+      <Title>
+        Sign In
+      </Title>
+      <Subtitle>
+        to join the conversation
+      </Subtitle>
+    </Bar>
+  </Localized>
+  <SubBar>
+    <Localized
+      id="signIn-noAccountSignUp"
+      textlink={
+        <withPropsOnChange(TextLinkProps)
+          href="/signUp"
+          onClick={[Function]}
+        />
+      }
+    >
+      <ForwardRef(forwardRef)
+        container={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        variant="bodyCopy"
+      >
+        Don't have an account?
+         
+        <withPropsOnChange(TextLinkProps)
+          href="/signUp"
+          onClick={[Function]}
+        >
+          Sign Up
+        </withPropsOnChange(TextLinkProps)>
+      </ForwardRef(forwardRef)>
+    </Localized>
+  </SubBar>
+  <Main
+    data-testid="signIn-main"
+  >
+    <ForwardRef(forwardRef)
+      size="oneAndAHalf"
+    >
+      <withPropsOnChange(CallOut)
+        color="error"
+        fullWidth={true}
+      >
+        Server Error
+      </withPropsOnChange(CallOut)>
+      <SignInContainer />
+      <OrSeparator />
+      <ForwardRef(forwardRef)>
+        <Relay(SignInWithFacebookContainer)
+          auth={Object {}}
+        />
+        <Relay(SignInWithGoogleContainer)
+          auth={Object {}}
+        />
+        <Relay(SignInWithOIDCContainer)
+          auth={Object {}}
+        />
+      </ForwardRef(forwardRef)>
+    </ForwardRef(forwardRef)>
+  </Main>
+</div>
+`;
+
+exports[`renders without email login 1`] = `
+<div
+  data-testid="signIn-container"
+>
+  <Localized
+    id="signIn-signInToJoinHeader"
+    subtitle={<Subtitle />}
+    title={<Title />}
+  >
+    <Bar>
+      <Title>
+        Sign In
+      </Title>
+      <Subtitle>
+        to join the conversation
+      </Subtitle>
+    </Bar>
+  </Localized>
+  <Main
+    data-testid="signIn-main"
+  >
+    <ForwardRef(forwardRef)
+      size="oneAndAHalf"
+    >
+      <ForwardRef(forwardRef)>
+        <Relay(SignInWithFacebookContainer)
+          auth={Object {}}
+        />
+        <Relay(SignInWithGoogleContainer)
+          auth={Object {}}
+        />
+        <Relay(SignInWithOIDCContainer)
+          auth={Object {}}
+        />
+      </ForwardRef(forwardRef)>
+    </ForwardRef(forwardRef)>
+  </Main>
+</div>
+`;

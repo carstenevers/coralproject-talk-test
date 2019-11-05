@@ -1,0 +1,17 @@
+.root {
+}
+
+.messageBox {
+  margin-bottom: -1px;
+}
+
+.textarea {
+  composes: bodyCopy from "coral-ui/shared/typography.css";
+  display: block;
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--mini-unit);
+  border-radius: var(--round-corners);
+  resize: vertical;
+}

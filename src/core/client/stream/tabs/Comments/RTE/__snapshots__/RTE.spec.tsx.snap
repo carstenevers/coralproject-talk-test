@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <RTE
+    className="$root content placeholder toolbar custom"
+    classNameDisabled=""
+    contentClassName="coral coral-rte-content RTE-content"
+    contentClassNameDisabled=""
+    contentContainerClassName=""
+    contentContainerClassNameDisabled=""
+    features={
+      Array [
+        <ForwardRef(RTELocalized)
+          attrs={
+            Object {
+              "title": true,
+            }
+          }
+          id="comments-rte-bold"
+        >
+          <Toggle>
+            <ForwardRef(forwardRef)
+              size="md"
+            >
+              format_bold
+            </ForwardRef(forwardRef)>
+          </Toggle>
+        </ForwardRef(RTELocalized)>,
+        <ForwardRef(RTELocalized)
+          attrs={
+            Object {
+              "title": true,
+            }
+          }
+          id="comments-rte-italic"
+        >
+          <Toggle>
+            <ForwardRef(forwardRef)
+              size="md"
+            >
+              format_italic
+            </ForwardRef(forwardRef)>
+          </Toggle>
+        </ForwardRef(RTELocalized)>,
+        <ForwardRef(RTELocalized)
+          attrs={
+            Object {
+              "title": true,
+            }
+          }
+          id="comments-rte-blockquote"
+        >
+          <Toggle>
+            <ForwardRef(forwardRef)
+              size="md"
+            >
+              format_quote
+            </ForwardRef(forwardRef)>
+          </Toggle>
+        </ForwardRef(RTELocalized)>,
+      ]
+    }
+    placeholder="Post a comment"
+    placeholderClassName="coral coral-rte-placholder RTE-placeholder"
+    placeholderClassNameDisabled=""
+    toolbarClassName="coral coral-rte-toolbar RTE-toolbar"
+    toolbarClassNameDisabled=""
+    toolbarPosition="bottom"
+    value="Hello world"
+  />
+</div>
+`;

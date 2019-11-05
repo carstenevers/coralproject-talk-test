@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  className="HistoryComment-root coral coral-myComment"
+  data-testid="historyComment-comment-id"
+>
+  <div>
+    <Localized
+      id="profile-historyComment-comment-on"
+    >
+      <ForwardRef(forwardRef)
+        className="HistoryComment-commentOn"
+        variant="detail"
+      >
+        Comment on:
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <ForwardRef(forwardRef)
+      className="coral coral-myComment-story"
+      color="textDark"
+      variant="heading4"
+    >
+      Story Title
+    </ForwardRef(forwardRef)>
+  </div>
+  <div>
+    <Timestamp
+      className="coral coral-myComment-timestamp"
+      toggleAbsolute={true}
+    >
+      2018-07-06T18:24:00.000Z
+    </Timestamp>
+    <ForwardRef(forwardRef)
+      container="div"
+      variant="bodyCopy"
+    >
+      <HTMLContent
+        className="coral coral-myComment-content"
+      >
+        Hello World
+      </HTMLContent>
+    </ForwardRef(forwardRef)>
+  </div>
+  <ForwardRef(forwardRef)
+    alignItems="center"
+    direction="row"
+    itemGutter="double"
+  >
+    <div
+      className="HistoryComment-replies coral coral-myComment-replies"
+    >
+      <ForwardRef(forwardRef)
+        className="HistoryComment-icon"
+      >
+        reply
+      </ForwardRef(forwardRef)>
+      <Localized
+        $replyCount={4}
+        id="profile-historyComment-replies"
+      >
+        <span>
+          Replies {$replyCount}
+        </span>
+      </Localized>
+    </div>
+    <Localized
+      id="profile-historyComment-viewConversation"
+    >
+      <withPropsOnChange(TextLinkProps)
+        className="HistoryComment-viewConversation coral coral-myComment-viewConversationButton"
+        href="http://localhost/conversation"
+        onClick={[Function]}
+        target="_parent"
+      >
+        View Conversation
+      </withPropsOnChange(TextLinkProps)>
+    </Localized>
+  </ForwardRef(forwardRef)>
+</ForwardRef(forwardRef)>
+`;

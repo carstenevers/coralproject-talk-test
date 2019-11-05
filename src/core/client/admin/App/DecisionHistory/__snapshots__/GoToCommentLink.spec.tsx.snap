@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(render)
+  as={[Function]}
+  className="GoToCommentLink-root"
+  onClick={[Function]}
+  to="#"
+>
+  <Localized
+    id="decisionHistory-goToComment"
+  >
+    <span>
+      Go to comment
+    </span>
+  </Localized>
+   
+  <ForwardRef(forwardRef)>
+    chevron_right
+  </ForwardRef(forwardRef)>
+</ForwardRef(render)>
+`;

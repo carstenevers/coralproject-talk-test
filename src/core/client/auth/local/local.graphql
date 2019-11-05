@@ -1,0 +1,20 @@
+enum View {
+  SIGN_UP
+  SIGN_IN
+  FORGOT_PASSWORD
+  CREATE_USERNAME
+  CREATE_PASSWORD
+  ADD_EMAIL_ADDRESS
+}
+
+type Local {
+  accessToken: String
+  accessTokenExp: Int
+  accessTokenJTI: String
+  view: View!
+  error: String
+}
+
+extend type Query {
+  local: Local!
+}

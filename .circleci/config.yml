@@ -1,0 +1,211 @@
+# job_environment will setup the environment for any job being executed.
+job_environment: &job_environment
+  NODE_ENV: test
+  WEBPACK_MAX_CORES: 4
+  NODE_OPTIONS: --max-old-space-size=8192
+
+# job_defaults applies all the defaults for each job.
+job_defaults: &job_defaults
+  working_directory: ~/coralproject/talk
+  resource_class: large
+  docker:
+    - image: circleci/node:10
+  environment:
+    <<: *job_environment
+
+version: 2
+jobs:
+  # npm_dependencies will install the dependencies used by all other steps.
+  npm_dependencies:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/coralproject/talk
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific package-lock.json
+            # checksum when this file is changed, this key will fail.
+            - v1-dependency-cache-{{ checksum "package-lock.json" }}
+            # Find the most recently generated cache used from any branch
+            - v1-dependency-cache-
+      - run:
+          name: Update NPM
+          command: sudo npm update -g npm
+      # Disabled until there's capabilities to ignore a specific vun. Related:
+      # https://npm.community/t/please-provide-option-to-ignore-packages-in-npm-audit/403/4
+      # https://github.com/npm/cli/pull/10
+      # https://github.com/npm/rfcs/pull/18
+      #
+      #   - run:
+      #       name: Audit dependencies
+      #       command: npm audit
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - save_cache:
+          key: v1-dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ~/.npm
+      - persist_to_workspace:
+          root: .
+          paths: node_modules
+
+  # lint will perform file linting.
+  lint:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/coralproject/talk
+      - run:
+          name: Generate schemas and types
+          command: npm run generate
+      - run:
+          name: Lint Source Code
+          command: npm run lint
+      - run:
+          name: Lint README.md
+          command: |
+            cp README.md README.md.orig
+            npm run doctoc
+            diff -q README.md README.md.orig
+
+  # unit_tests will run the unit tests.
+  unit_tests:
+    <<: *job_defaults
+    environment:
+      <<: *job_environment
+      CI: true
+      JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/coralproject/talk
+      - run:
+          name: Generate schemas and types
+          command: npm run generate
+      - run:
+          name: Perform testing
+          # We're running these tests in band to avoid errors where the circleci
+          # test runner runs out of RAM trying to run them all in parallel.
+          command: npm run test -- --ci --runInBand --reporters=default --reporters=jest-junit
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
+
+  # build will build the static assets and server typescript files.
+  build:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/coralproject/talk
+      - restore_cache:
+          keys:
+            - v1-build-cache-{{ .Branch }}-{{ .Revision }}
+            - v1-build-cache-{{ .Branch }}-
+            - v1-build-cache-
+      - run:
+          name: Build
+          command: npm run build
+          no_output_timeout: 30m
+      - run:
+          name: Verify Bundle Size
+          command: npx bundlesize
+      - save_cache:
+          key: v1-build-cache-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - ./dist
+      - persist_to_workspace:
+          root: .
+          paths: dist
+
+  # docker_tests will test that the docker build process completes.
+  docker_tests:
+    docker:
+      - image: node:10-alpine
+    environment:
+      NODE_ENV: development
+    steps:
+      - checkout
+      - run:
+          name: Update Image Dependencies
+          command: apk --no-cache add git python
+      - run:
+          name: Install NodeJS Dependencies
+          command: npm install
+
+  # release_docker will build and push the Docker image.
+  release_docker:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - setup_remote_docker
+      - deploy:
+          name: Deploy the code
+          command: bash ./scripts/docker.sh deploy
+          no_output_timeout: 30m
+
+# filter_release will add the filters for a deploy job in a workflow to make it
+# only execute on a deploy related job.
+filter_release: &filter_release
+  filters:
+    branches:
+      only:
+        - master
+        - next
+    tags:
+      only: /^v.*/
+
+# filter_develop will add the filters for a development related commit.
+filter_develop: &filter_develop
+  filters:
+    branches:
+      ignore:
+        - master
+        - next
+
+workflows:
+  version: 2
+  build-test:
+    jobs:
+      - docker_tests:
+          <<: *filter_develop
+      - npm_dependencies:
+          <<: *filter_develop
+      - lint:
+          <<: *filter_develop
+          requires:
+            - npm_dependencies
+      - unit_tests:
+          <<: *filter_develop
+          requires:
+            - npm_dependencies
+      - build:
+          <<: *filter_develop
+          requires:
+            - npm_dependencies
+  build-test-deploy:
+    jobs:
+      - npm_dependencies:
+          <<: *filter_release
+      - lint:
+          <<: *filter_release
+          requires:
+            - npm_dependencies
+      - unit_tests:
+          <<: *filter_release
+          requires:
+            - npm_dependencies
+      - build:
+          <<: *filter_release
+          requires:
+            - npm_dependencies
+      - release_docker:
+          <<: *filter_release
+          requires:
+            - lint
+            - unit_tests
+            - build

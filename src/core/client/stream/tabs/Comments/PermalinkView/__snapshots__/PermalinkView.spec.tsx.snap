@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders comment not found 1`] = `
+<ForwardRef(forwardRef)
+  className="PermalinkView-root coral coral-permalink coral-authenticated"
+  size="double"
+>
+  <withContext(createMutationContainer(withContext(createMutationContainer(withContext(createMutationContainer(withContext(withLocalStateContainer(Relay(UserBoxContainer)))))))))
+    settings={Object {}}
+    viewer={Object {}}
+  />
+  <ForwardRef(forwardRef)
+    alignItems="center"
+    direction="column"
+    justifyContent="center"
+  >
+    <Localized
+      id="comments-permalinkView-currentViewing"
+    >
+      <ForwardRef(forwardRef)
+        className="PermalinkView-title1"
+      >
+        You are currently viewing a
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <Localized
+      id="comments-permalinkView-singleConversation"
+    >
+      <ForwardRef(forwardRef)
+        className="PermalinkView-title2"
+      >
+        SINGLE CONVERSATION
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <Localized
+      id="comments-permalinkView-viewFullDiscussion"
+    >
+      <ForwardRef(forwardRef)
+        anchor={true}
+        className="coral coral-permalink-viewFullDiscussionButton"
+        color="primary"
+        href="http://localhost/link"
+        onClick={[Function]}
+        target="_parent"
+        variant="underlined"
+      >
+        View Full Discussion
+      </ForwardRef(forwardRef)>
+    </Localized>
+  </ForwardRef(forwardRef)>
+  <withPropsOnChange(CallOut)
+    fullWidth={true}
+  >
+    <Localized
+      id="comments-permalinkView-commentRemovedOrDoesNotExist"
+    >
+      <ForwardRef(forwardRef)>
+        This comment has been removed or does not exist.
+      </ForwardRef(forwardRef)>
+    </Localized>
+  </withPropsOnChange(CallOut)>
+</ForwardRef(forwardRef)>
+`;
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  className="PermalinkView-root coral coral-permalink coral-authenticated"
+  size="double"
+>
+  <withContext(createMutationContainer(withContext(createMutationContainer(withContext(createMutationContainer(withContext(withLocalStateContainer(Relay(UserBoxContainer)))))))))
+    settings={Object {}}
+    viewer={Object {}}
+  />
+  <ForwardRef(forwardRef)
+    alignItems="center"
+    direction="column"
+    justifyContent="center"
+  >
+    <Localized
+      id="comments-permalinkView-currentViewing"
+    >
+      <ForwardRef(forwardRef)
+        className="PermalinkView-title1"
+      >
+        You are currently viewing a
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <Localized
+      id="comments-permalinkView-singleConversation"
+    >
+      <ForwardRef(forwardRef)
+        className="PermalinkView-title2"
+      >
+        SINGLE CONVERSATION
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <Localized
+      id="comments-permalinkView-viewFullDiscussion"
+    >
+      <ForwardRef(forwardRef)
+        anchor={true}
+        className="coral coral-permalink-viewFullDiscussionButton"
+        color="primary"
+        href="http://localhost/link"
+        onClick={[Function]}
+        target="_parent"
+        variant="underlined"
+      >
+        View Full Discussion
+      </ForwardRef(forwardRef)>
+    </Localized>
+  </ForwardRef(forwardRef)>
+  <ForwardRef(forwardRef)>
+    <withContext(withContext(createMutationContainer(Relay(ConversationThreadContainer))))
+      comment={Object {}}
+      settings={Object {}}
+      story={Object {}}
+      viewer={Object {}}
+    />
+    <div
+      className="PermalinkView-replyList"
+    >
+      <withProps(Relay(ReplyListContainer))
+        comment={Object {}}
+        liveDirectRepliesInsertion={true}
+        settings={Object {}}
+        story={Object {}}
+        viewer={Object {}}
+      />
+    </div>
+  </ForwardRef(forwardRef)>
+</ForwardRef(forwardRef)>
+`;

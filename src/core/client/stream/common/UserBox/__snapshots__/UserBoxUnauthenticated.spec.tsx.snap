@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  alignItems="center"
+  className="coral coral-viewerBox"
+  itemGutter={true}
+>
+  <MatchMediaWithContext
+    gteWidth="sm"
+  >
+    <Localized
+      id="general-userBoxUnauthenticated-joinTheConversation"
+    >
+      <ForwardRef(forwardRef)
+        className="UserBoxUnauthenticated-joinText"
+        container="span"
+        variant="bodyCopyBold"
+      >
+        Join the conversation
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <ForwardRef(forwardRef)
+      container="span"
+      variant="bodyCopyBold"
+    >
+      |
+    </ForwardRef(forwardRef)>
+  </MatchMediaWithContext>
+  <Localized
+    id="general-userBoxUnauthenticated-signIn"
+  >
+    <ForwardRef(forwardRef)
+      className="coral coral-viewerBox-signInButton"
+      color="primary"
+      onClick={[Function]}
+      size="small"
+      variant="underlined"
+    >
+      Sign in
+    </ForwardRef(forwardRef)>
+  </Localized>
+  <Localized
+    id="general-userBoxUnauthenticated-register"
+  >
+    <ForwardRef(forwardRef)
+      className="coral coral-viewerBox-registerButton"
+      color="primary"
+      onClick={[Function]}
+      size="small"
+      variant="outlined"
+    >
+      Register
+    </ForwardRef(forwardRef)>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;
+
+exports[`renders correctly hides showRegisterButton 1`] = `
+<ForwardRef(forwardRef)
+  alignItems="center"
+  className="coral coral-viewerBox"
+  itemGutter={true}
+>
+  <MatchMediaWithContext
+    gteWidth="sm"
+  >
+    <Localized
+      id="general-userBoxUnauthenticated-joinTheConversation"
+    >
+      <ForwardRef(forwardRef)
+        className="UserBoxUnauthenticated-joinText"
+        container="span"
+        variant="bodyCopyBold"
+      >
+        Join the conversation
+      </ForwardRef(forwardRef)>
+    </Localized>
+    <ForwardRef(forwardRef)
+      container="span"
+      variant="bodyCopyBold"
+    >
+      |
+    </ForwardRef(forwardRef)>
+  </MatchMediaWithContext>
+  <Localized
+    id="general-userBoxUnauthenticated-signIn"
+  >
+    <ForwardRef(forwardRef)
+      className="coral coral-viewerBox-signInButton"
+      color="primary"
+      onClick={[Function]}
+      size="small"
+      variant="underlined"
+    >
+      Sign in
+    </ForwardRef(forwardRef)>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;

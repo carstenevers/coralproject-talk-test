@@ -1,0 +1,13 @@
+.root {
+  composes: root from "coral-stream/shared/htmlContent.css";
+
+  mark {
+    background-color: var(--palette-highlight);
+    padding: 0 2px;
+  }
+  a {
+    color: var(--palette-primary-dark);
+    background-color: var(--palette-highlight);
+    padding: 0 2px;
+  }
+}

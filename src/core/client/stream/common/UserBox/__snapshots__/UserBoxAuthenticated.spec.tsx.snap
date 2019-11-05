@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with logout button 1`] = `
+<ForwardRef(forwardRef)
+  className="coral coral-viewerBox"
+  itemGutter="half"
+  wrap={true}
+>
+  <Localized
+    Username={<Username />}
+    id="general-userBoxAuthenticated-signedInAs"
+  >
+    <ForwardRef(forwardRef)
+      className="UserBoxAuthenticated-userBoxText"
+      container="div"
+      variant="bodyCopy"
+    >
+      Signed in as &lt;Username&gt;&lt;/Username&gt;.
+    </ForwardRef(forwardRef)>
+  </Localized>
+  <Localized
+    button={
+      <ForwardRef(forwardRef)
+        className="UserBoxAuthenticated-userBoxButton coral coral-viewerBox-logoutButton"
+        color="primary"
+        onClick={[Function]}
+        size="small"
+        variant="regular"
+      />
+    }
+    id="general-userBoxAuthenticated-notYou"
+  >
+    <ForwardRef(forwardRef)
+      className="UserBoxAuthenticated-userBoxText"
+      container={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        }
+      }
+      variant="bodyCopy"
+    >
+      Not you? &lt;button&gt;Sign Out&lt;/button&gt;
+    </ForwardRef(forwardRef)>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;
+
+exports[`renders correctly without logout button 1`] = `
+<ForwardRef(forwardRef)
+  className="coral coral-viewerBox"
+  itemGutter="half"
+  wrap={true}
+>
+  <Localized
+    Username={<Username />}
+    id="general-userBoxAuthenticated-signedInAs"
+  >
+    <ForwardRef(forwardRef)
+      className="UserBoxAuthenticated-userBoxText"
+      container="div"
+      variant="bodyCopy"
+    >
+      Signed in as &lt;Username&gt;&lt;/Username&gt;.
+    </ForwardRef(forwardRef)>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;

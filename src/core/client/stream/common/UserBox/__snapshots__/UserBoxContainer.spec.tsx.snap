@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders fully 1`] = `
+<React.Fragment>
+  <Popup
+    features={
+      Object {
+        "innerWidth": 350,
+        "width": 350,
+      }
+    }
+    focus={false}
+    href="/embed/auth?view=SIGN_IN"
+    onBlur={[Function]}
+    onClose={[Function]}
+    onFocus={[Function]}
+    open={false}
+    title="Coral Auth"
+  />
+  <UserBoxUnauthenticated
+    onRegister={[Function]}
+    onSignIn={[Function]}
+    showRegisterButton={true}
+  />
+</React.Fragment>
+`;
+
+exports[`renders sso only 1`] = `null`;
+
+exports[`renders sso only without logout button 1`] = `null`;
+
+exports[`renders without logout button 1`] = `
+<React.Fragment>
+  <Popup
+    features={
+      Object {
+        "innerWidth": 350,
+        "width": 350,
+      }
+    }
+    focus={false}
+    href="/embed/auth?view=SIGN_IN"
+    onBlur={[Function]}
+    onClose={[Function]}
+    onFocus={[Function]}
+    open={false}
+    title="Coral Auth"
+  />
+  <UserBoxUnauthenticated
+    onRegister={[Function]}
+    onSignIn={[Function]}
+    showRegisterButton={true}
+  />
+</React.Fragment>
+`;
+
+exports[`renders without register button 1`] = `
+<React.Fragment>
+  <Popup
+    features={
+      Object {
+        "innerWidth": 350,
+        "width": 350,
+      }
+    }
+    focus={false}
+    href="/embed/auth?view=SIGN_IN"
+    onBlur={[Function]}
+    onClose={[Function]}
+    onFocus={[Function]}
+    open={false}
+    title="Coral Auth"
+  />
+  <UserBoxUnauthenticated
+    onSignIn={[Function]}
+    showRegisterButton={false}
+  />
+</React.Fragment>
+`;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  data-testid="moderate-container"
+>
+  <ForwardRef(render)
+    allStories={true}
+    story={Object {}}
+  />
+  <withPropsOnChange(SubBar)
+    data-testid="moderate-tabBar-container"
+  >
+    <Relay(ModerateNavigationContainer)
+      moderationQueues={Object {}}
+      story={Object {}}
+    />
+  </withPropsOnChange(SubBar)>
+  <div
+    className="Moderate-background"
+  />
+  <MainLayout
+    data-testid="moderate-main-container"
+  >
+    <main
+      className="Moderate-main"
+    />
+  </MainLayout>
+  <HotkeysModal
+    onClose={[Function]}
+    open={false}
+  />
+</div>
+`;

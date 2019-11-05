@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  alignItems="center"
+  className="Empty-root"
+  justifyContent="center"
+>
+  <Localized
+    id="decisionHistory-youWillSeeAList"
+  >
+    <ForwardRef(forwardRef)>
+      You will see a list of your post moderation actions here.
+    </ForwardRef(forwardRef)>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;

@@ -1,0 +1,11 @@
+.root {
+}
+
+.loadMore {
+  padding-left: var(--mini-unit);
+  padding-bottom: var(--mini-unit);
+}
+
+.showMoreButton {
+  text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  data-testid="authBox"
+>
+  <ForwardRef(forwardRef)
+    justifyContent="center"
+  >
+    <ForwardRef(forwardRef)
+      className="AuthBox-container"
+      size="double"
+    >
+      <ForwardRef(forwardRef)
+        justifyContent="center"
+      >
+        <div
+          className="AuthBox-brandIcon"
+        >
+          <withPropsOnChange(BrandMark)
+            size="lg"
+          />
+        </div>
+      </ForwardRef(forwardRef)>
+      <div>
+        <ForwardRef(forwardRef)
+          align="center"
+          variant="heading3"
+        >
+          title
+        </ForwardRef(forwardRef)>
+        <withPropsOnChange(BrandName)
+          align="center"
+          size="lg"
+        />
+      </div>
+      content
+    </ForwardRef(forwardRef)>
+  </ForwardRef(forwardRef)>
+</div>
+`;

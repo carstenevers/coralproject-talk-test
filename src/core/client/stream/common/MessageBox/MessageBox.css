@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--spacing-3);
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--palette-text-primary);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+}

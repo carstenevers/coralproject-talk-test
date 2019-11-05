@@ -1,0 +1,20 @@
+.root {
+  height: calc(6 * var(--mini-unit));
+  background-color: #013f68;
+  margin-top: -1px;
+}
+
+.bumpZIndex {
+  z-index: 100;
+}
+
+.popover {
+  width: calc(94 * var(--mini-unit));
+  border: 0;
+}
+
+.listBox {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

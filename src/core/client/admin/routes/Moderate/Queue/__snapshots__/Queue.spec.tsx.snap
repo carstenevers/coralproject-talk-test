@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with load more 1`] = `
+<ForwardRef(forwardRef)
+  className="Queue-root"
+  size="double"
+>
+  <QueueWrapper
+    card={[Function]}
+    comments={Array []}
+    singleView={false}
+  />
+  <ForwardRef(forwardRef)
+    justifyContent="center"
+  >
+    <withContext(WithInView)
+      disableLoadMore={false}
+      onLoadMore={[Function]}
+    />
+  </ForwardRef(forwardRef)>
+  <UserHistoryDrawer
+    onClose={[Function]}
+    open={false}
+    userID=""
+  />
+</ForwardRef(forwardRef)>
+`;
+
+exports[`renders correctly without load more 1`] = `
+<ForwardRef(forwardRef)
+  className="Queue-root"
+  size="double"
+>
+  <QueueWrapper
+    card={[Function]}
+    comments={Array []}
+    singleView={false}
+  />
+  <UserHistoryDrawer
+    onClose={[Function]}
+    open={false}
+    userID=""
+  />
+</ForwardRef(forwardRef)>
+`;

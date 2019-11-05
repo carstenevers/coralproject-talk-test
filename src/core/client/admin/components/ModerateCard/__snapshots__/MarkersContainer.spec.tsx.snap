@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders all markers 1`] = `
+<Markers
+  details={
+    <Relay(ModerateCardDetailsContainer)
+      comment={
+        Object {
+          "editing": Object {
+            "edited": false,
+          },
+          "revision": Object {
+            "actionCounts": Object {
+              "flag": Object {
+                "reasons": Object {
+                  "COMMENT_DETECTED_BANNED_WORD": 1,
+                  "COMMENT_DETECTED_LINKS": 1,
+                  "COMMENT_DETECTED_RECENT_HISTORY": 1,
+                  "COMMENT_DETECTED_REPEAT_POST": 1,
+                  "COMMENT_DETECTED_SPAM": 1,
+                  "COMMENT_DETECTED_SUSPECT_WORD": 1,
+                  "COMMENT_DETECTED_TOXIC": 1,
+                  "COMMENT_REPORTED_OFFENSIVE": 2,
+                  "COMMENT_REPORTED_SPAM": 3,
+                },
+              },
+            },
+            "metadata": Object {
+              "perspective": Object {
+                "score": 0,
+              },
+            },
+          },
+          "status": "PREMOD",
+        }
+      }
+      hasDetails={true}
+      hasRevisions={false}
+      onUsernameClick={[Function]}
+      settings={
+        Object {
+          "integrations": Object {
+            "perspective": Object {
+              "threshold": 0.8,
+            },
+          },
+        }
+      }
+    />
+  }
+>
+  <Localized
+    id="moderate-marker-preMod"
+  >
+    <withPropsOnChange(Marker)
+      color="primary"
+    >
+      Pre-mod
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-link"
+  >
+    <withPropsOnChange(Marker)
+      color="primary"
+    >
+      Link
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-bannedWord"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Banned word
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-suspectWord"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+      variant="filled"
+    >
+      Suspect word
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-spamDetected"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Spam detected
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-toxic"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Toxic
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-repeatPost"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Repeat comment
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-recentHistory"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Recent history
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <withPropsOnChange(Marker)
+    color="error"
+  >
+    <Localized
+      id="moderate-marker-offensive"
+    >
+      <span>
+        Offensive
+      </span>
+    </Localized>
+     
+    <withPropsOnChange(Count)>
+      2
+    </withPropsOnChange(Count)>
+  </withPropsOnChange(Marker)>
+  <withPropsOnChange(Marker)
+    color="error"
+  >
+    <Localized
+      id="moderate-marker-spam"
+    >
+      <span>
+        Spam
+      </span>
+    </Localized>
+     
+    <withPropsOnChange(Count)>
+      3
+    </withPropsOnChange(Count)>
+  </withPropsOnChange(Marker)>
+</Markers>
+`;
+
+exports[`renders some markers 1`] = `
+<Markers
+  details={
+    <Relay(ModerateCardDetailsContainer)
+      comment={
+        Object {
+          "editing": Object {
+            "edited": false,
+          },
+          "revision": Object {
+            "actionCounts": Object {
+              "flag": Object {
+                "reasons": Object {
+                  "COMMENT_DETECTED_BANNED_WORD": 1,
+                  "COMMENT_DETECTED_LINKS": 0,
+                  "COMMENT_DETECTED_RECENT_HISTORY": 1,
+                  "COMMENT_DETECTED_REPEAT_POST": 0,
+                  "COMMENT_DETECTED_SPAM": 0,
+                  "COMMENT_DETECTED_SUSPECT_WORD": 0,
+                  "COMMENT_DETECTED_TOXIC": 1,
+                  "COMMENT_REPORTED_OFFENSIVE": 2,
+                  "COMMENT_REPORTED_SPAM": 0,
+                },
+              },
+            },
+            "metadata": Object {
+              "perspective": Object {
+                "score": 1,
+              },
+            },
+          },
+          "status": "PREMOD",
+        }
+      }
+      hasDetails={true}
+      hasRevisions={false}
+      onUsernameClick={[Function]}
+      settings={
+        Object {
+          "integrations": Object {
+            "perspective": Object {
+              "threshold": 0.8,
+            },
+          },
+        }
+      }
+    />
+  }
+>
+  <Localized
+    id="moderate-marker-preMod"
+  >
+    <withPropsOnChange(Marker)
+      color="primary"
+    >
+      Pre-mod
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-bannedWord"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Banned word
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-toxic"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Toxic
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <Localized
+    id="moderate-marker-recentHistory"
+  >
+    <withPropsOnChange(Marker)
+      color="error"
+    >
+      Recent history
+    </withPropsOnChange(Marker)>
+  </Localized>
+  <withPropsOnChange(Marker)
+    color="error"
+  >
+    <Localized
+      id="moderate-marker-offensive"
+    >
+      <span>
+        Offensive
+      </span>
+    </Localized>
+     
+    <withPropsOnChange(Count)>
+      2
+    </withPropsOnChange(Count)>
+  </withPropsOnChange(Marker)>
+</Markers>
+`;

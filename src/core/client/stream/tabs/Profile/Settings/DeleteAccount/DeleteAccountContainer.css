@@ -1,0 +1,19 @@
+.content {
+  max-width: 495px;
+}
+
+.root {
+  margin-top: var(--spacing-2);
+}
+
+.icon {
+  margin-right: var(--spacing-2);
+}
+
+.title {
+  margin-bottom: var(--spacing-2);
+}
+
+.section {
+  margin-bottom: var(--spacing-3);
+}

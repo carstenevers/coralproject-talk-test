@@ -1,0 +1,10 @@
+.root {
+  composes: buttonReset from "coral-ui/shared/buttonReset.css";
+}
+
+.keyboardFocus {
+  @mixin outline;
+}
+
+.mouseHover {
+}

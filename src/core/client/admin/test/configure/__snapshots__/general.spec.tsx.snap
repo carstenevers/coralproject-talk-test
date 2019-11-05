@@ -1,0 +1,1141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders configure general 1`] = `
+<div
+  className="MainLayout-root"
+  data-testid="configure-container"
+>
+  <form
+    autoComplete="off"
+    id="configure-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="Box-root Flex-root Layout-root Flex-flex"
+    >
+      <div
+        className="SideBar-root"
+      >
+        <div
+          className="Box-root HorizontalGutter-root HorizontalGutter-double"
+        >
+          <nav
+            className="Navigation-root"
+          >
+            <ul
+              className="Navigation-ul"
+            >
+              <li>
+                <a
+                  className="Link-link Link-linkActive"
+                  href="/admin/configure/general"
+                  onClick={[Function]}
+                >
+                  General
+                </a>
+              </li>
+              <li>
+                <a
+                  className="Link-link"
+                  href="/admin/configure/organization"
+                  onClick={[Function]}
+                >
+                  Organization
+                </a>
+              </li>
+              <li>
+                <a
+                  className="Link-link"
+                  href="/admin/configure/moderation"
+                  onClick={[Function]}
+                >
+                  Moderation
+                </a>
+              </li>
+              <li>
+                <a
+                  className="Link-link"
+                  href="/admin/configure/wordList"
+                  onClick={[Function]}
+                >
+                  Banned and Suspect Words
+                </a>
+              </li>
+              <li>
+                <a
+                  className="Link-link"
+                  href="/admin/configure/auth"
+                  onClick={[Function]}
+                >
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a
+                  className="Link-link"
+                  href="/admin/configure/email"
+                  onClick={[Function]}
+                >
+                  Email
+                </a>
+              </li>
+              <li>
+                <a
+                  className="Link-link"
+                  href="/admin/configure/advanced"
+                  onClick={[Function]}
+                >
+                  Advanced
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          className="Box-root HorizontalGutter-root HorizontalGutter-double"
+        >
+          <button
+            className="BaseButton-root Button-root Button-sizeRegular Button-colorSuccess Button-variantFilled Button-disabled"
+            data-color="success"
+            data-testid="configure-sideBar-saveChanges"
+            data-variant="filled"
+            disabled={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            type="submit"
+          >
+            Save Changes
+          </button>
+        </div>
+      </div>
+      <div
+        className="Main-root"
+      >
+        <div
+          className="Box-root HorizontalGutter-root HorizontalGutter-double"
+          data-testid="configure-generalContainer"
+        >
+          <div
+            className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+          >
+            <div
+              className="Box-root HorizontalGutter-root HorizontalGutter-full"
+            >
+              <label
+                className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+                htmlFor="configure-locale-locale"
+              >
+                Language
+              </label>
+              <div
+                className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+              >
+                <p
+                  className="Box-root Typography-root Typography-detail Typography-colorTextPrimary"
+                >
+                  Choose the language for your Coral community.
+                </p>
+                <span
+                  className="SelectField-root"
+                >
+                  <select
+                    className="SelectField-select"
+                    disabled={false}
+                    id="configure-locale-locale"
+                    name="locale"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    value="en-US"
+                  >
+                    <option
+                      value="en-US"
+                    >
+                      English
+                    </option>
+                    <option
+                      value="pt-BR"
+                    >
+                      Português brasileiro
+                    </option>
+                    <option
+                      value="es"
+                    >
+                      Español
+                    </option>
+                    <option
+                      value="de"
+                    >
+                      Deutsch
+                    </option>
+                    <option
+                      value="nl-NL"
+                    >
+                      Nederlands
+                    </option>
+                    <option
+                      value="da"
+                    >
+                      Dansk
+                    </option>
+                  </select>
+                  <span
+                    aria-hidden={true}
+                    className="SelectField-afterWrapper"
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="Icon-root Icon-sm"
+                    >
+                      expand_more
+                    </i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <fieldset
+            className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <legend
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Sitewide commenting
+            </legend>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Open or close comment streams for new comments sitewide.
+When new comments are turned off, new comments cannot be
+submitted, but existing comments can continue to receive
+reactions, be reported, and be shared.
+              </p>
+              <fieldset
+                className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <legend
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                >
+                  Enable new comments sitewide
+                </legend>
+                <div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={true}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="disableCommenting.enabled-true"
+                      name="disableCommenting.enabled"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={false}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="disableCommenting.enabled-true"
+                    >
+                      <span>
+                        On - Comment streams opened for new comments
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={false}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="disableCommenting.enabled-false"
+                      name="disableCommenting.enabled"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={true}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="disableCommenting.enabled-false"
+                    >
+                      <span>
+                        Off - Comment streams closed for new comments
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div
+                className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <label
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                  htmlFor="configure-general-sitewideCommenting-message"
+                >
+                  Sitewide closed comments message
+                </label>
+                <p
+                  className="Box-root Typography-root Typography-fieldDescription Typography-colorTextSecondary"
+                >
+                  Write a message that will be displayed when comment streams are closed sitewide
+                </p>
+              </div>
+              <div
+                className="MarkdownEditor-wrapper"
+              >
+                <textarea
+                  id="configure-general-sitewideCommenting-message"
+                  name="disableCommenting.message"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  value="Comments are closed on this story."
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset
+            className="FieldSet-root Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <legend
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Community guidelines summary
+            </legend>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <fieldset
+                className="FieldSet-root Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <legend
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                >
+                  Show community guidelines summary
+                </legend>
+                <div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={false}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="communityGuidelines.enabled-true"
+                      name="communityGuidelines.enabled"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={true}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="communityGuidelines.enabled-true"
+                    >
+                      <span>
+                        On
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={true}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="communityGuidelines.enabled-false"
+                      name="communityGuidelines.enabled"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={false}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="communityGuidelines.enabled-false"
+                    >
+                      <span>
+                        Off
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div
+                className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <label
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                  htmlFor="configure-general-guidelines-content"
+                >
+                  Community guidelines summary
+                </label>
+                <p
+                  className="Box-root Typography-root Typography-fieldDescription Typography-colorTextSecondary"
+                >
+                  This will appear above the comments sitewide.
+You can format the text using Markdown.
+More information on how to use Markdown
+
+                  <a
+                    className="ExternalLink-root"
+                    href="#"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+              <div
+                className="MarkdownEditor-wrapper"
+              >
+                <textarea
+                  id="configure-general-guidelines-content"
+                  name="communityGuidelines.content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  value=""
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset
+            className="FieldSet-root Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <legend
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Comment length
+            </legend>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Set minimum and maximum comment length requirements.
+Blank spaces at the beginning and the end of a comment will be trimmed.
+              </p>
+              <div
+                className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <label
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                >
+                  Limit comment length
+                </label>
+                <div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={false}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="charCount.enabled-true"
+                      name="charCount.enabled"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={true}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="charCount.enabled-true"
+                    >
+                      <span>
+                        On
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={true}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="charCount.enabled-false"
+                      name="charCount.enabled"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={false}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="charCount.enabled-false"
+                    >
+                      <span>
+                        Off
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <label
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                  htmlFor="configure-general-commentLength-min"
+                >
+                  Minimum comment length
+                </label>
+                <div
+                  className="TextField-root"
+                >
+                  <input
+                    autoCapitalize="off"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className="TextField-input CommentLengthConfig-commentLengthTextInput TextField-colorRegular TextField-textAlignCenter"
+                    disabled={false}
+                    id="configure-general-commentLength-min"
+                    name="charCount.min"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="No limit"
+                    spellCheck={false}
+                    type="text"
+                    value={3}
+                  />
+                  <div
+                    className="TextField-adornment"
+                  >
+                    <p
+                      className="Box-root Typography-root Typography-bodyCopy Typography-colorTextPrimary"
+                    >
+                      Characters
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <label
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                  htmlFor="configure-general-commentLength-max"
+                >
+                  Maximum comment length
+                </label>
+                <div
+                  className="TextField-root"
+                >
+                  <input
+                    autoCapitalize="off"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className="TextField-input CommentLengthConfig-commentLengthTextInput TextField-colorRegular TextField-textAlignCenter"
+                    disabled={false}
+                    id="configure-general-commentLength-max"
+                    name="charCount.max"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="No limit"
+                    spellCheck={false}
+                    type="text"
+                    value={1000}
+                  />
+                  <div
+                    className="TextField-adornment"
+                  >
+                    <p
+                      className="Box-root Typography-root Typography-bodyCopy Typography-colorTextPrimary"
+                    >
+                      Characters
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div
+            className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <h1
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Comment editing
+            </h1>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Set a limit on how long commenters have to edit their comments sitewide.
+Edited comments are marked as (Edited) on the comment stream and the
+moderation panel.
+              </p>
+              <fieldset
+                className="FieldSet-root Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <legend
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                >
+                  Comment edit timeframe
+                </legend>
+                <div
+                  className="Box-root Flex-root Flex-flex Flex-itemGutter gutter"
+                >
+                  <div
+                    className="TextField-root DurationField-value"
+                  >
+                    <input
+                      aria-label="value"
+                      autoCapitalize="off"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      className="TextField-input TextField-colorRegular TextField-textAlignCenter"
+                      disabled={false}
+                      name="editCommentWindowLength-value"
+                      onChange={[Function]}
+                      placeholder=""
+                      spellCheck={false}
+                      type="text"
+                      value="500"
+                    />
+                  </div>
+                  <span
+                    className="SelectField-root"
+                  >
+                    <select
+                      aria-label="unit"
+                      className="SelectField-select DurationField-select"
+                      disabled={false}
+                      name="editCommentWindowLength-unit"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      value="60"
+                    >
+                      <option
+                        value="1"
+                      >
+                        Seconds
+                      </option>
+                      <option
+                        value="60"
+                      >
+                        Minutes
+                      </option>
+                      <option
+                        value="3600"
+                      >
+                        Hours
+                      </option>
+                    </select>
+                    <span
+                      aria-hidden={true}
+                      className="SelectField-afterWrapper"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="Icon-root Icon-sm"
+                      >
+                        expand_more
+                      </i>
+                    </span>
+                  </span>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <fieldset
+            className="FieldSet-root Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <legend
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Closing comment streams
+            </legend>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Set comment streams to close after a defined period of time after a story’s publication
+              </p>
+              <fieldset
+                className="FieldSet-root Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <legend
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                >
+                  Close comments automatically
+                </legend>
+                <div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={false}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="closeCommenting.auto-true"
+                      name="closeCommenting.auto"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={true}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="closeCommenting.auto-true"
+                    >
+                      <span>
+                        On
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    className="Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter"
+                  >
+                    <input
+                      checked={true}
+                      className="RadioButton-input"
+                      disabled={false}
+                      id="closeCommenting.auto-false"
+                      name="closeCommenting.auto"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value={false}
+                    />
+                    <label
+                      className="RadioButton-label"
+                      htmlFor="closeCommenting.auto-false"
+                    >
+                      <span>
+                        Off
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset
+                className="FieldSet-root Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+              >
+                <legend
+                  className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                >
+                  Close comments after
+                </legend>
+                <div
+                  className="Box-root Flex-root Flex-flex Flex-itemGutter gutter"
+                >
+                  <div
+                    className="TextField-root DurationField-value"
+                  >
+                    <input
+                      aria-label="value"
+                      autoCapitalize="off"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      className="TextField-input TextField-colorRegular TextField-textAlignCenter"
+                      disabled={false}
+                      name="closeCommenting.timeout-value"
+                      onChange={[Function]}
+                      placeholder=""
+                      spellCheck={false}
+                      type="text"
+                      value="1"
+                    />
+                  </div>
+                  <span
+                    className="SelectField-root"
+                  >
+                    <select
+                      aria-label="unit"
+                      className="SelectField-select DurationField-select"
+                      disabled={false}
+                      name="closeCommenting.timeout-unit"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      value="604800"
+                    >
+                      <option
+                        value="3600"
+                      >
+                        Hour
+                      </option>
+                      <option
+                        value="86400"
+                      >
+                        Day
+                      </option>
+                      <option
+                        value="604800"
+                      >
+                        Week
+                      </option>
+                    </select>
+                    <span
+                      aria-hidden={true}
+                      className="SelectField-afterWrapper"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="Icon-root Icon-sm"
+                      >
+                        expand_more
+                      </i>
+                    </span>
+                  </span>
+                </div>
+              </fieldset>
+            </div>
+          </fieldset>
+          <div
+            className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <label
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+              htmlFor="configure-general-closedStreamMessage-content"
+            >
+              Closed comment stream message
+            </label>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Write a message to appear when a story is closed for commenting.
+              </p>
+              <div
+                className="MarkdownEditor-wrapper"
+              >
+                <textarea
+                  id="configure-general-closedStreamMessage-content"
+                  name="closeCommenting.message"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  value="Comments are closed on this story."
+                />
+              </div>
+            </div>
+          </div>
+          <fieldset
+            className="FieldSet-root Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <legend
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Reactions
+            </legend>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Allow your community to engage with one another and express themselves
+with one-click reactions. By default, Coral allows commenters to "Respect"
+each other's comments.
+              </p>
+              <div
+                className="Box-root HorizontalGutter-root HorizontalGutter-double"
+              >
+                <div
+                  className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+                >
+                  <div
+                    className="Box-root Flex-root Flex-flex Flex-doubleItemGutter gutter"
+                  >
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <label
+                        className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                      >
+                        Reaction label
+                      </label>
+                      <div
+                        className="TextField-root TextField-fullWidth ReactionConfig-textInput"
+                      >
+                        <input
+                          className="TextField-input TextField-colorRegular"
+                          disabled={false}
+                          id="reaction.label"
+                          name="reaction.label"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="E.g. Respect"
+                          type="text"
+                          value="Reaction"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <h1
+                        className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary"
+                      >
+                        Preview
+                      </h1>
+                      <button
+                        className="BaseButton-root Button-root Button-sizeSmall Button-colorPrimary Button-variantTextUnderlined Button-disabled ReactionButton-readOnly ReactionConfig-reactionButton ReactionButton-button"
+                        data-color="primary"
+                        data-variant="textUnderlined"
+                        disabled={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        onTouchEnd={[Function]}
+                        type="button"
+                      >
+                        <span>
+                          Reaction
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+                >
+                  <div
+                    className="Box-root Flex-root Flex-flex Flex-doubleItemGutter gutter"
+                  >
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <label
+                        className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                      >
+                        Active reaction label
+                      </label>
+                      <div
+                        className="TextField-root TextField-fullWidth ReactionConfig-textInput"
+                      >
+                        <input
+                          className="TextField-input TextField-colorRegular"
+                          disabled={false}
+                          id="reaction.labelActive"
+                          name="reaction.labelActive"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="E.g. Respected"
+                          type="text"
+                          value="reacted"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <h1
+                        className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary"
+                      >
+                        Preview
+                      </h1>
+                      <button
+                        className="BaseButton-root Button-root Button-sizeSmall Button-colorPrimary Button-variantTextUnderlined Button-disabled ReactionButton-readOnly ReactionConfig-reactionButton ReactionButton-button"
+                        data-color="primary"
+                        data-variant="textUnderlined"
+                        disabled={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        onTouchEnd={[Function]}
+                        type="button"
+                      >
+                        <span>
+                          reacted
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+                >
+                  <div
+                    className="Box-root Flex-root Flex-flex Flex-doubleItemGutter gutter"
+                  >
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <label
+                        className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                      >
+                        Sort label
+                      </label>
+                      <div
+                        className="TextField-root TextField-fullWidth ReactionConfig-textInput"
+                      >
+                        <input
+                          className="TextField-input TextField-colorRegular"
+                          disabled={false}
+                          id="reaction.sortLabel"
+                          name="reaction.sortLabel"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="E.g. Most respected"
+                          type="text"
+                          value="Reactions"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <h1
+                        className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary"
+                      >
+                        Preview
+                      </h1>
+                      <div
+                        className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-justifyCenter Flex-alignCenter gutter"
+                      >
+                        <p
+                          className="Box-root Typography-root Typography-bodyCopyBold Typography-colorTextPrimary"
+                        >
+                          Sort by
+                        </p>
+                        <span
+                          className="SelectField-root"
+                        >
+                          <select
+                            className="SelectField-select"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                          >
+                            <option
+                              value="Reactions"
+                            >
+                              Reactions
+                            </option>
+                             
+                          </select>
+                          <span
+                            aria-hidden={true}
+                            className="SelectField-afterWrapper"
+                          >
+                            <i
+                              aria-hidden="true"
+                              className="Icon-root Icon-sm"
+                            >
+                              expand_more
+                            </i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset
+            className="FieldSet-root Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+          >
+            <legend
+              className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary Header-root"
+            >
+              Staff member badge
+            </legend>
+            <div
+              className="Box-root HorizontalGutter-root SectionContent-sectionContent HorizontalGutter-double"
+            >
+              <p
+                className="Box-root Typography-root Typography-bodyShort Typography-colorTextPrimary"
+              >
+                Show a custom badge for staff members of your organization. This badge
+appears on the comment stream and in the admin interface.
+              </p>
+              <div
+                className="Box-root HorizontalGutter-root HorizontalGutter-double"
+              >
+                <div
+                  className="Box-root HorizontalGutter-root FormField-root HorizontalGutter-half"
+                >
+                  <div
+                    className="Box-root Flex-root Flex-flex Flex-doubleItemGutter gutter"
+                  >
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <label
+                        className="Box-root Typography-root Typography-inputLabel Typography-colorTextPrimary InputLabel-root"
+                      >
+                        Badge text
+                      </label>
+                      <div
+                        className="TextField-root TextField-fullWidth StaffConfig-textInput"
+                      >
+                        <input
+                          className="TextField-input TextField-colorRegular"
+                          disabled={false}
+                          id="staff.label"
+                          name="staff.label"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="E.g. Staff"
+                          type="text"
+                          value="Staff"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="Box-root HorizontalGutter-root HorizontalGutter-full"
+                    >
+                      <h1
+                        className="Box-root Typography-root Typography-heading3 Typography-colorTextPrimary"
+                      >
+                        Preview
+                      </h1>
+                      <span
+                        className="Tag-root Tag-colorGrey Tag-uppercase"
+                      >
+                        Staff
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;

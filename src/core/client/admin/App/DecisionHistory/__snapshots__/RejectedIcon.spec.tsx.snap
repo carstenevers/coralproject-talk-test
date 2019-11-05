@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  className="RejectedIcon-root"
+>
+  cancel
+</ForwardRef(forwardRef)>
+`;

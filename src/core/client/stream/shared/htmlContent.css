@@ -1,0 +1,33 @@
+.root {
+  composes: bodyCopy from "coral-ui/shared/typography.css";
+  color: var(--palette-text-dark);
+  overflow-wrap: break-word;
+
+  & * bold,
+  & * strong {
+    font-weight: var(--font-weight-medium);
+  }
+  & * italic,
+  & * em {
+    font-style: italic;
+  }
+  blockquote {
+    background-color: var(--palette-grey-lightest);
+    padding: var(--mini-unit);
+    margin: calc(2 * var(--mini-unit)) 0 calc(2 * var(--mini-unit))
+      var(--mini-unit);
+    border-radius: var(--round-corners);
+    &::after {
+      content: none;
+    }
+    &::before {
+      content: none;
+    }
+  }
+  a {
+    color: var(--palette-primary-main);
+    &:hover {
+      color: var(--palette-primary-dark);
+    }
+  }
+}

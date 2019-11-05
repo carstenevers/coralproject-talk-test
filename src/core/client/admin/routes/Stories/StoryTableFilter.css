@@ -1,0 +1,13 @@
+.legend {
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.textField {
+  height: 31px;
+  width: calc(45 * var(--mini-unit));
+}
+
+.adornment {
+  padding: 0 var(--mini-unit);
+}

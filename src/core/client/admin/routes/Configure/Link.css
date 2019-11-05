@@ -1,0 +1,28 @@
+.link {
+  composes: sideNavigationItem from "coral-ui/shared/typography.css";
+  display: inline-block;
+  padding: calc(0.5 * var(--mini-unit)) var(--mini-unit)
+    calc(0.5 * var(--mini-unit)) calc(var(--mini-unit) + 2px);
+  margin-left: 2px;
+  border-left: 1px solid var(--palette-grey-lighter);
+
+  &:hover {
+    cursor: pointer;
+    border-left: 2px solid var(--palette-brand-main);
+    padding-left: calc(var(--mini-unit) + 1px);
+    color: var(--palette-text-primary);
+  }
+}
+
+.linkActive {
+  composes: sideNavigationActive from "coral-ui/shared/typography.css";
+  margin-left: 2px;
+  border-left: calc(0.5 * var(--mini-unit)) solid var(--palette-brand-main);
+  padding-left: var(--mini-unit);
+
+  &:hover {
+    border-left: calc(0.5 * var(--mini-unit)) solid var(--palette-brand-main);
+    padding-left: var(--mini-unit);
+    color: var(--palette-text-primary);
+  }
+}

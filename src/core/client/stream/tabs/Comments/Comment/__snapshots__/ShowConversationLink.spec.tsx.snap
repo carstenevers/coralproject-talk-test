@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Localized
+  id="comments-showConversationLink-readMore"
+>
+  <ForwardRef(forwardRef)
+    anchor={true}
+    color="primary"
+    href="http://localhost/comment"
+    id="id"
+    onClick={[Function]}
+    target="_parent"
+    variant="underlined"
+  >
+    Read More of this Conversation &gt;
+  </ForwardRef(forwardRef)>
+</Localized>
+`;

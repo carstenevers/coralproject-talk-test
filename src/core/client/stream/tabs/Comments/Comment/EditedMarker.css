@@ -1,0 +1,3 @@
+.root {
+  composes: detail from "coral-ui/shared/typography.css";
+}

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders username and body 1`] = `
+<ForwardRef(forwardRef)
+  className="Comment-root"
+  role="article"
+  size="half"
+>
+  <ForwardRef(forwardRef)
+    className="coral coral-comment-topBar"
+    direction="row"
+    justifyContent="space-between"
+  >
+    <TopBarLeft>
+      <ForwardRef(forwardRef)
+        alignItems="center"
+        direction="row"
+        itemGutter="half"
+      >
+        Marvin
+      </ForwardRef(forwardRef)>
+      <ForwardRef(forwardRef)
+        alignItems="baseline"
+        direction="row"
+        itemGutter={true}
+      >
+        <Timestamp
+          className="coral coral-timestamp coral-comment-timestamp"
+          toggleAbsolute={true}
+        >
+          1995-12-17T03:24:00.000Z
+        </Timestamp>
+        <EditedMarker
+          className="coral coral-comment-edited"
+        />
+      </ForwardRef(forwardRef)>
+    </TopBarLeft>
+    <div>
+      topBarRight
+    </div>
+  </ForwardRef(forwardRef)>
+  <ForwardRef(forwardRef)
+    size="oneAndAHalf"
+  >
+    <HTMLContent
+      className="coral coral-content coral-comment-content"
+    >
+      Woof
+    </HTMLContent>
+    footer
+  </ForwardRef(forwardRef)>
+</ForwardRef(forwardRef)>
+`;

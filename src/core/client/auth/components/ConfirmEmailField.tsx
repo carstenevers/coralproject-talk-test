@@ -1,0 +1,46 @@
+import { Localized } from "fluent-react/compat";
+import React, { FunctionComponent } from "react";
+import { Field } from "react-final-form";
+
+import { colorFromMeta, ValidationMessage } from "coral-framework/lib/form";
+import {
+  composeValidators,
+  required,
+  validateEqualEmails,
+} from "coral-framework/lib/validation";
+import { FormField, InputLabel, TextField } from "coral-ui/components";
+
+interface Props {
+  disabled: boolean;
+}
+
+const ConfirmEmailField: FunctionComponent<Props> = props => (
+  <Field
+    name="confirmEmail"
+    validate={composeValidators(required, validateEqualEmails)}
+  >
+    {({ input, meta }) => (
+      <FormField>
+        <Localized id="general-confirmEmailAddressLabel">
+          <InputLabel htmlFor={input.name}>Confirm Email Address</InputLabel>
+        </Localized>
+        <Localized
+          id="general-confirmEmailAddressTextField"
+          attrs={{ placeholder: true }}
+        >
+          <TextField
+            id={input.name}
+            placeholder="Confirm Email Address"
+            color={colorFromMeta(meta)}
+            disabled={props.disabled}
+            fullWidth
+            {...input}
+          />
+        </Localized>
+        <ValidationMessage meta={meta} fullWidth />
+      </FormField>
+    )}
+  </Field>
+);
+
+export default ConfirmEmailField;

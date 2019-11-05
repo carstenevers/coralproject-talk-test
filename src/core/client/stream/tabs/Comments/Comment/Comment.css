@@ -1,0 +1,13 @@
+.root {
+}
+
+.highlight {
+  background-color: var(--palette-primary-lightest);
+  padding: var(--mini-unit);
+}
+.subBar {
+  margin-bottom: calc(0.5 * var(--mini-unit));
+}
+.footer:not(:empty) {
+  margin-top: var(--mini-unit);
+}

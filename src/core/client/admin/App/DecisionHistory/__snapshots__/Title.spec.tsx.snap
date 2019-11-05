@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  alignItems="center"
+  className="Title-root"
+>
+  <ForwardRef(forwardRef)>
+    history
+  </ForwardRef(forwardRef)>
+   
+  <Localized
+    id="decisionHistory-yourDecisionHistory"
+  >
+    <ForwardRef(forwardRef)
+      className="Title-text"
+      container="span"
+    >
+      Your Decision History
+    </ForwardRef(forwardRef)>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;

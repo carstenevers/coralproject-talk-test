@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ForwardRef(forwardRef)
+  active={true}
+  color="primary"
+  id="id"
+  onClick={[Function]}
+  size="small"
+  variant="textUnderlined"
+>
+  <MatchMediaWithContext
+    gtWidth="xs"
+  >
+    <ForwardRef(forwardRef)>
+      reply
+    </ForwardRef(forwardRef)>
+  </MatchMediaWithContext>
+  <Localized
+    id="comments-replyButton-reply"
+  >
+    <span>
+      Reply
+    </span>
+  </Localized>
+</ForwardRef(forwardRef)>
+`;

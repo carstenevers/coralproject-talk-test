@@ -1,0 +1,29 @@
+.root {
+  margin-top: var(--spacing-2);
+}
+
+.content {
+  max-width: 495px;
+}
+
+.title {
+  margin-bottom: var(--spacing-2);
+}
+
+.description {
+  margin-bottom: var(--spacing-3);
+}
+
+.recentRequest {
+  margin-bottom: var(--spacing-3);
+
+  color: #808080;
+}
+
+.icon {
+  margin-right: var(--spacing-2);
+}
+
+.callout {
+  justify-content: left;
+}
