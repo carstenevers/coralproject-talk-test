@@ -35,5 +35,5 @@ jobs:
   build-dockerfile:
     requires: main
     steps:
-      - set_date: BUILDDATE=$(date +"%Y-%m-%d_%H:%M:%S")
-      - publish: $BUILDDATE
+      - set_docker_build_name: DOCKER_BUILD_NAME=screwdriver-talk_$(date +"%Y-%m-%d__%H_%M_%S") 
+      - build: docker build . -t $DOCKER_BUILD_NAME
